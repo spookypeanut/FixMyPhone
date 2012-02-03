@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" package="uk.co.spookypeanut.fixmyphone">
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/screen_off_name">
+
+        <activity android:name=".SleepActivity$TurnOff"
+                  android:label="@string/screen_off_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SleepActivity"
+                android:label="@string/screen_off_name"
+                android:description="@string/screen_off_description"
+                android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin"
+                       android:resource="@xml/screen_off_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+</manifest>

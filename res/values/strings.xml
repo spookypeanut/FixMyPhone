@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SleepActivity!</string>
+    <string name="app_name">FixMyPhone</string>
+    <string name="screen_off_name">Turn off screen</string>
+    <string name="screen_off_description">monkey monkey monkey</string>
+</resources>

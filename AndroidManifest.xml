@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-sdk android:minSdkVersion="8" />
 
-    <application android:icon="@drawable/icon" android:label="@string/screen_off_name">
+    <application android:icon="@drawable/lockscreen" android:label="@string/screen_off_name">
 
         <activity android:name=".SleepActivity$TurnOff"
                   android:label="@string/screen_off_name">
